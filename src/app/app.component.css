@@ -1,0 +1,157 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: black;
+    overflow-x: hidden;
+}
+
+.v-header{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    color:blanchedalmond;
+}
+
+.container{
+    max-width: 960px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin: auto;
+    text-align: center;
+}
+
+.fullscreen-video-wrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; 
+}
+
+.fullscreen-video-wrap video{
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.header-overlay{
+    height: 99.8vh;
+    width: 98.9vw;
+    position: absolute;
+    top : 0;
+    left: 0;
+    background:black;
+    z-index: 2;
+    opacity:0.55 ;
+}
+
+.header-content{
+    z-index: 2;
+}
+
+.header-content h1{
+    font: size 50px;
+    margin-bottom:0;
+    margin-top: 190px;
+}
+
+.header-content p{
+font-size: 1.5rem;
+display: block;
+padding-bottom:2rem;
+margin-top: 80px;
+}
+
+.section{
+    padding:  0;
+    background: black;
+    color: blanchedalmond;
+    overflow: hidden;
+} 
+
+.fromoutline {
+   margin-left: 276px;
+    padding: 190px ;
+    border: 3px solid black;
+    z-index: 2;
+    border-radius:10%;
+  }
+
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+
+  .background{
+    background-color: black;
+    color:white;
+    text-emphasis: strong;
+    border-radius: 10%;
+    overflow: hidden;
+  }
+
+  .background2{
+    background-color:gold;
+    color:white;
+    text-emphasis: strong;
+    border-radius: 10%;
+    overflow: hidden;
+  }
+  
+  /* ----------------text on images---------------- */
+  .container1 {
+    position: relative;
+    max-width: 800px; /* Maximum width */
+    margin: 0 auto; /* Center it */
+  }
+
+  
+  .container1 .content {
+    position: absolute; /* Position the background text */
+    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    width: 100%; /* Full width */
+    padding: 20px; /* Some padding */
+  }
+
+  .container2 {
+    position: relative;
+    max-width: 800px; /* Maximum width */
+    margin: 0 auto; /* Center it */
+  }
+
+  
+  .container2 .content2 {
+    position: absolute; /* Position the background text */
+    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    width: 100%; /* Full width */
+    padding: 20px; /* Some padding */
+    margin-left: 300px;
+  }
+
+  .h2{
+    text-decoration: underline;
+    font-size: 50px;
+    font-weight: bolder;
+  }
+
+  .p1{
+    font-size: 30px;
+    text-align: center;
+    margin-left: 90px;
+    margin-right: 50px;
+    margin-top: 50px;
+    font-family: 'Times New Roman', Times, serif;
+  }

@@ -1,0 +1,26 @@
+
+<div class="container">
+    <div class="row" style="background-color:rgb(108, 173, 3)">
+      <div class="col-sm-2">
+        BOOKID
+       </div>  
+      <div class="col-sm-2">
+            CUSTOMERID
+        </div>  
+    </div>
+
+    <div class="row" *ngFor="let bt of tickethistoy" style="background-color:rgb(34, 119, 189)">
+        <div class="col-sm-2">
+            {{bt.bookid}}
+           </div>
+           <div class="col-sm-2">
+            {{bt.customerid}}
+           </div>
+           </div>
+           </div> <br> 
+
+             <form [formGroup]="bookinghistoryform">
+               bookingid<input type="text" formControlName="bookid"/>&nbsp;
+               customerid<input type="text" formControlName="customerid"/><br>
+               <button (click)="addbookinginfo()">EnterINFO</button>
+           </form>

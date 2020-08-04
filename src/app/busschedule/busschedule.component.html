@@ -1,0 +1,59 @@
+
+<div class="container">
+    <div class="row" style="background-color:rgb(108, 173, 3)">
+        <div class="col-sm-3">
+             SCHEDULE ID
+        </div>
+        <div class="col-sm-3">
+            SERVICENO
+       </div>
+       <div class="col-sm-3">
+         DATE OF JOURNEY
+        </div>   
+        <div class="col-sm-3">
+            DEPARTURE TIME
+           </div> 
+           <div class="col-sm-3">
+            ARRIVAL TIME
+           </div> 
+           <div class="col-sm-3">
+            DRIVER NAME
+           </div> 
+           <div class="col-sm-3">
+            FARE
+           </div> 
+           <div class="col-sm-3">
+            AVAILABLESEATS
+           </div> 
+
+    </div>
+
+    <div class="row" *ngFor="let bt of scheduleservice" style="background-color:rgb(31, 119, 189)">
+        <div class="col-sm-3">
+            {{bt.scheduleid}}
+       </div>
+       <div class="col-sm-3">
+          {{bt.serviceno}}
+      </div>
+      <div class="col-sm-3">
+        {{bt.dateofjourney}}
+       </div>
+       <div class="col-sm-3">
+        {{bt.departuretime}}
+       </div> 
+       <div class="col-sm-3">
+        {{bt.arrivaltime}}
+       </div>
+        <div class="col-sm-3">
+        {{bt.drivername}}
+       </div> 
+       <div class="col-sm-3">
+        {{bt.fare}}
+       </div>
+       <div class="col-sm-1">
+        {{bt.availableseats}}
+       </div>
+
+    </div>
+</div>
+

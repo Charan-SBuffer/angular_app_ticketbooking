@@ -1,0 +1,35 @@
+
+
+<div class="container">
+    <div class="row" style="background-color:rgb(108, 173, 3)">
+        <div class="col-sm-2">
+             Bus Type ID
+        </div>
+        <div class="col-sm-2">
+            Bus Type
+       </div>
+       <div class="col-sm-2">
+         Bus Capacity
+        </div> 
+        <div class="col-sm-2">
+            OPTIONS
+           </div>   
+    </div>
+
+    <div class="row" *ngFor="let bt of bustypes" style="background-color:rgb(34, 119, 189)">
+        <div class="col-sm-2">
+            {{bt.bustypeid}}
+       </div>
+       <div class="col-sm-2">
+          {{bt.bustype}}
+      </div>
+      <div class="col-sm-2">
+        {{bt.capacity}}
+       </div>
+       <div class="col-sm-2">
+       <button (click)="deletbustypeofid(bt.bustypeid)">Delete</button>
+       </div>
+    </div>
+</div>
+
+

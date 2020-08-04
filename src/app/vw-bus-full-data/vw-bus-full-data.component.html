@@ -1,0 +1,85 @@
+<!-- <select #id (change) ="getdestination(id.value)">
+    <option *ngFor="let vw of vwbus">
+        {{vw.destination}}
+    </option>
+</select><br> -->
+<div class="arrangeFilter">
+  <div class="container-fluid">
+<strong>BUS TYPE:</strong>&nbsp;&nbsp;
+Delux:<input type="radio" #id value="Delux" name="bustype" (change)="getbustype(id.value)"/>&nbsp;
+Luxuer:<input type="radio" #id1 value="Luxury" name="bustype" (change)="getbustype(id1.value)"/>&nbsp;
+Express:<input type="radio" #id2 value="Express" name="bustype" (change)="getbustype(id2.value)"/>&nbsp;
+Venella:<input type="radio" #id3 value="Vennela" name="bustype" (change)=" getbustype(id3.value)"/><br><br>
+</div>
+</div>
+<div class="container">
+    <div class="row" style="background-color:rgb(108, 173, 3)">
+      <div class="col-sm-1">
+        Info..
+       </div>  
+      <div class="col-sm-1">
+            BUSTYPE
+        </div>  
+           <div class="col-sm-1">
+            SOURCE
+           </div>  
+           <div class="col-sm-1">
+            DESTINATION
+           </div>  
+           <div class="col-sm-2">
+            DATE OF JOURNEY
+           </div>
+           <div class="col-sm-1">
+            FARE
+           </div>  
+           <div class="col-sm-2">
+            AVAILABLE SEATS
+           </div>  
+           <div class="col-sm-2">
+             Book
+           </div>
+                 
+    </div>
+
+    <div class="row" *ngFor="let bt of vwbus" style="background-color:rgb(34, 119, 189)">
+      <div class="col-sm-1">
+        <div class="dropdown">
+          <button class="dropbtn">FULL INFO</button>
+          <div class="dropdown-content">
+            <div style="background-color:rgb(187, 144, 104)">
+            <p>CAPACITY :{{bt.capacity}}</p>
+            <p>OWNER : {{bt.owner}}</p>
+            <p>DEPARTURE TIME : {{bt.depaturetime}}</p> 
+           <p>ARRIVAL TIME : {{bt.arrivaltime}}</p>
+           <p>DRIVER NAME : {{bt.drivername}}</p>
+          </div>
+        </div>
+        </div>
+        </div>  
+       <div class="col-sm-1">
+          {{bt.bustype}}
+      </div>
+       <div class="col-sm-1">
+        {{bt.source}}
+       </div>
+       <div class="col-sm-1">
+        {{bt.destination}}
+       </div>
+       <div class="col-sm-2">
+        {{bt.dateofjourney}}
+       </div>
+       <div class="col-sm-1">
+        {{bt.fare}}
+       </div>
+       <div class="col-sm-2">
+        {{bt.availableseats}}
+       </div>
+       <div class="col-sm-2">
+        <button (click)="bookticket(bt.bustypeid)" style="background-color:rgba(174, 78, 194, 0.719);margin-top: 8px;">BOOK</button>
+       </div>
+
+    </div>
+    <hr>
+
+</div>
+

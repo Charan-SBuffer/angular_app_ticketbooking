@@ -1,0 +1,28 @@
+
+
+<div class="container">
+    <div class="row" style="background-color:rgb(108, 173, 3)">
+        <div class="col-sm-4">
+             SERVICE ID
+        </div>
+        <div class="col-sm-4">
+            ROUTEID
+       </div>
+       <div class="col-sm-4">
+         Bus ID
+        </div>   
+    </div>
+
+    <div class="row" *ngFor="let bt of busservices" style="background-color:rgb(34, 119, 189)">
+        <div class="col-sm-4">
+            {{bt.serviceno}}
+       </div>
+       <div class="col-sm-4">
+          {{bt.routeid}}
+      </div>
+      <div class="col-sm-4">
+        {{bt.busid}}
+       </div>
+
+    </div>
+</div>

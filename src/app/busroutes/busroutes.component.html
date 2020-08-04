@@ -1,0 +1,35 @@
+
+<div class="container">
+    <div class="row" style="background-color:rgb(108, 173, 3)">
+        <div class="col-sm-4">
+             Bus ROUTE ID
+        </div>
+        <div class="col-sm-4">
+            SOURCE
+       </div>
+       <div class="col-sm-4">
+            DESTINATION
+                </div>   
+                <div class="col-sm-4">
+                    DISTANCE
+                        </div>  
+    </div>
+
+    <div class="row" *ngFor="let bt of busroutes" style="background-color:rgb(34, 119, 189)">
+        <div class="col-sm-4">
+            {{bt.routeid}}
+       </div>
+       <div class="col-sm-4">
+          {{bt.source}}
+      </div>
+      <div class="col-sm-4">
+        {{bt.destination}}
+       </div>
+       <div class="col-sm-4">
+        {{bt.distance}}
+       </div>
+       
+
+
+    </div>
+</div>

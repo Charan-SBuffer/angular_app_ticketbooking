@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+.imageadjust2 {
+    float:right;
+    margin-left: 20px;
+    margin-right : 75px;
+    margin-top: 0px;
+
+}
+
+.arrangefilter{
+    margin-left: 30px;
+}
+
+.searchbar{
+    float:right;
+    margin-right:30px;
+}
+
+
+.avatar{
+    padding-top: 5px;
+    border-radius: 50%;
+   }

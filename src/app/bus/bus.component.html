@@ -1,0 +1,33 @@
+<p>bus works!</p>
+<div class="container">
+    <div class="row" style="background-color:rgb(158, 236, 32)">
+        <div class="col-sm-3">
+             Bus  ID
+        </div>
+        <div class="col-sm-3">
+            Bus Type
+       </div>
+       <div class="col-sm-3">
+          OWNER
+        </div>  
+        <div class="col-sm-3">
+            Bus OWNER
+           </div>    
+    </div>
+
+    <div class="row" *ngFor="let bt of bus" style="background-color:rgba(36, 190, 201, 0.562)">
+        <div class="col-sm-3">
+            {{bt.busid}}
+       </div>
+       <div class="col-sm-3">
+          {{bt.bustype}}
+      </div>
+      <div class="col-sm-3">
+        {{bt.owner}}
+       </div>
+       <div class="col-sm-3">
+        {{bt.busowner}}
+       </div>
+
+    </div>
+</div>

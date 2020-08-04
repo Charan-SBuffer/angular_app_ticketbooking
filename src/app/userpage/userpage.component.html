@@ -1,0 +1,83 @@
+<img src="assets/img/mountaines.png" alt="background with logo" width="1262px" length="200px"><br>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+            <ul class="nav navbar-nav">
+             <li><a class="navbar-brand" routerLink="/vw_full_data">RedBus</a></li>
+                <li><a routerLink="/allBusroutes">ROUTES</a></li>
+      <li><a routerLink="/allBuses">BUSES</a></li>
+      <li><a routerLink="/allBusschedules">SCHEDULES</a></li>
+      <li><a routerLink="/allBusservices">SERVICES</a></li>
+      <li><a routerLink="/allBustypes">BUSTYPES</a></li>
+      <li><a routerLink="/getfullbookinghistory">BOOKINGHISTORY</a></li> 
+        <ul class="nav navbar-nav navbar-right" style="margin-left: 200px;">
+          <li><a href="#">{{user.firstname}}</a></li>
+            <li>
+                <img src="assets/img/img_avatar.png" alt="Avatar" class="avatar" style="width: 40px;height: 50px;" ></li>
+               <li>
+                 <a href="/reqforsingup">
+                    <span class="glyphicon glyphicon-pencil">
+                       </span> Edit/
+            <span class="glyphicon glyphicon-log-out">
+            </span> 
+            LogOUT
+        </a>        
+        </li>
+          </ul>
+      </ul>
+    </div>
+  </nav><hr>
+
+  <!-- {{message}} -->
+  
+<!-- 
+<div *ngIf="message.type=='D'">
+  <div class="alert">
+    <span class="closebtn">&times;</span>  
+    <strong>Danger!</strong>{{message.messagebody}}
+  </div>
+</div>
+
+  <div *ngIf="message.type=='S'">
+  <div class="alert success">
+    <span class="closebtn">&times;</span>  
+    <strong>Success!</strong> {{message.messagebody}}
+  </div>
+  </div>
+  
+  <div *ngIf="message.type=='I'">
+  <div class="alert info">
+    <span class="closebtn">&times;</span>  
+    <strong>Info!</strong> {{message.messagebody}}
+  </div>
+  </div>
+  
+  <div *ngIf="message.type=='W'">
+  <div class="alert warning">
+    <span class="closebtn">&times;</span>  
+    <strong>Warning!</strong> {{message.messagebody}}
+  </div>
+  </div> -->
+
+
+
+<!-- ------------------backgroundimages--------------------------- -->
+
+
+
+<!-- <div class="bg-image img1"></div>
+<div class="bg-image img2"></div>
+<div class="bg-image img3"></div>
+<div class="bg-image img4"></div>
+<div class="bg-image img5"></div>
+<div class="bg-image img6"></div>
+
+<div class="bg-text">TEXT</div><br> -->
+
+{{user.id}}
+{{user.firstname}};
+{{user.lastname}};
+{{user.mobilenumber}};
+{{user.emailid}};
+
+
+

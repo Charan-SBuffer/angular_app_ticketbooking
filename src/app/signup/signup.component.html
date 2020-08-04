@@ -1,0 +1,124 @@
+<div class="container-fluid">
+<h1>Already a user login:<br></h1>
+<br>
+&nbsp;USERID:<input  #id [(ngModel)]="userid">&emsp;PASSWORD:<input #id1 [(ngModel)]="password"> &nbsp;<button (click)="logincheck()">LOGIN</button>
+</div>
+
+ <!-- --------------------POPUP-------------------------------------  -->
+<div *ngIf="message!=null">
+  <div *ngIf="message.type=='D'">
+    <div class="alert">
+      <span class="closebtn">&times;</span>  
+      <strong>Danger!</strong>{{message.messagebody}}
+    </div>
+  </div>
+  
+    <div *ngIf="message.type=='S'">
+    <div class="alert success">
+      <span class="closebtn">&times;</span>  
+      <strong>Success!</strong> {{message.messagebody}}
+    </div>
+    </div>
+    
+    <div *ngIf="message.type=='I'">
+    <div class="alert info">
+      <span class="closebtn">&times;</span>  
+      <strong>Info!</strong> {{message.messagebody}}
+    </div>
+    </div>
+    
+    <div *ngIf="message.type=='W'">
+    <div class="alert warning">
+      <span class="closebtn">&times;</span>  
+      <strong>Warning!</strong> {{message.messagebody}}
+    </div>
+    </div>
+  </div>
+<br>
+
+
+<div clas="container-fluid">
+<h2>List of User's</h2></div><div class="searchbar">
+<input type="number" #searchvale>&nbsp;<button (click)="searchuser(searchvalue.value)">Search</button></div><br>
+<br>
+<div class="container">
+    <div class="row" style="background-color:rgb(214, 108, 38)">
+      <div class="col-sm-2" hidden="true">
+        USERID
+       </div>  
+      <div class="col-sm-2">
+            FIRSTNAME
+        </div>  
+        <div class="col-sm-2">
+            LASTNAME
+        </div>  
+        <div class="col-sm-2">
+            EMAILID
+        </div>  
+        <div class="col-sm-2">
+            MOBILENUMBER
+        </div>  
+        <div class="col-sm-2" hidden="true">
+            PASSWORD
+        </div>  
+    </div>
+
+    <div class="row" *ngFor="let bt of users" style="background-color:rgb(17, 181, 231)">
+        <div class="col-sm-2" hidden="true">
+            {{bt.userid}}
+           </div>
+           <div class="col-sm-2">
+            {{bt.firstname}}
+           </div>
+           <div class="col-sm-2">
+            {{bt.lastname}}
+        </div>
+        <div class="col-sm-2">
+            {{bt.emailid}}
+        </div>
+        <div class="col-sm-2">
+            {{bt.mobilenumber}}
+        </div>
+        <div class="col-sm-2" Hidden="true">
+            {{bt.password}}
+        </div>
+           </div>
+           </div> <br> 
+           <br>
+           
+           <div id="navbar"  style="background-color:rgb(17, 181, 231)">
+            <p>Scroll Down to Signup:</p>
+          </div>
+          
+          <div style="padding:15px 15px 2500px;font-size:30px">
+    <form [formGroup]="signupform">
+    <label>
+        <input type="text" formControlName="id" hidden="true">
+      </label>    
+  <label>
+    First Name:
+    <input type="text" formControlName="firstname">
+  </label>&nbsp;
+<label>
+    Last Name:
+    <input type="text" formControlName="lastname">
+  </label>
+<label>
+    Emailid:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" formControlName="emailid">
+  </label>&nbsp;
+  <label>
+    MobileNO&nbsp;:&nbsp;
+    <input type="text" formControlName="mobilenumber">
+  </label><br><hr>
+  <label>
+    Password &nbsp; : &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+    <input type="password" formControlName="password" #pwd />
+  </label>&nbsp;
+  <label>
+   Conforme Password:
+    <input type="password" #pwdcf (keyup)="checkpassword(pwd.value,pwdcf.value)"/>{{mespasswoedmsg}}
+  </label><br>
+  <br>
+  &nbsp;<button (click)="signup()">Submit Application</button>
+</form> 
